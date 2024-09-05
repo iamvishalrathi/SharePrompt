@@ -1,23 +1,29 @@
 import "@styles/globals.css";
 
+import Nav from "@components/Nav";
+import Provider from "@components/Provider";
+
 export const metadata = {
-    title: "Share-Prompt",
+    title: "SharePrompt",
     description: "Discover & Share AI Prompts",
     icons: {
-        icon: '/assets/images/share-prompt.png'
+        icon: '/assets/images/logo.svg'
     }
 };
 
 const RootLayout = ({ children }) => (
     <html lang='en'>
         <body>
-            <div className='main'>
-                <div className='gradient' />
-            </div>
+            <Provider>
+                <div className='main'>
+                    <div className='gradient' />
+                </div>
 
-            <main className='app'>
-                {children}
-            </main>
+                <main className='app'>
+                    <Nav />
+                    {children}
+                </main>
+            </Provider>
         </body>
     </html>
 );
