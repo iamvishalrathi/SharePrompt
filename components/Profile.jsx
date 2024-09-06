@@ -1,4 +1,4 @@
-import Loading from "./loading";
+import Loading from "./Loading";
 import PromptCard from "./PromptCard";
 
 const Profile = ({ name, desc, data, handleEdit, handleDelete, isLoading }) => {
