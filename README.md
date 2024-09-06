@@ -1,4 +1,4 @@
-# **<img src="" alt="Sample Image" width="25"/> SharePrompt**
+# **<img src="https://github.com/iamvishalrathi/share-prompt/blob/main/public/assets/images/logo.svg" alt="Sample Image" width="25"/> SharePrompt**
 Welcome to **SharePrompt**!
 
 Welcome to SharePrompt! This full-stack web application allows users to create, save, and search various prompts. Users can sign in using their Google accounts. The application is built using Next.js for both the frontend and backend.
