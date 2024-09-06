@@ -10,15 +10,15 @@ const UserProfile = ({ params }) => {
   const userName = searchParams.get("name");
 
   const [userPosts, setUserPosts] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
     const fetchPosts = async () => {
-      setIsLoading(true);
+      // setIsLoading(true);
       const response = await fetch(`/api/users/${params?.id}/posts`);
       const data = await response.json();
 
-      setIsLoading(false);
+      // setIsLoading(false);
       setUserPosts(data);
     };
 
@@ -30,7 +30,7 @@ const UserProfile = ({ params }) => {
       name={userName}
       desc={`Welcome to ${userName}'s personalized profile page. Explore ${userName}'s exceptional prompts and be inspired by the power of their imagination`}
       data={userPosts}
-      isLoading={isLoading}
+      // isLoading={isLoading}
     />
   );
 };
