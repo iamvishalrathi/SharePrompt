@@ -18,12 +18,19 @@ const PromptCard = ({ post, handleEdit, handleDelete, handleTagClick }) => {
     setTimeout(() => setCopied(false), 3000);
   };
 
+  const handleProfileClick = () => {
+
+    if (post.creator._id === session?.user.id) return router.push("/profile");
+
+    router.push(`/profile/${post.creator._id}?name=${post.creator.username}`);
+  };
+
   return (
     <div className='prompt_card'>
       <div className='flex justify-between items-start gap-5'>
         <div
           className='flex-1 flex justify-start items-center gap-3 cursor-pointer'
-          onClick={()=>{}}
+          onClick={handleProfileClick}
         >
           <Image
             src={post.creator.image}

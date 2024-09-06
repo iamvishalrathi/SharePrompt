@@ -11,12 +11,15 @@ const MyProfile = () => {
     const { data: session } = useSession();
 
     const [myPosts, setMyPosts] = useState([]);
+    const [isLoading, setIsLoading] = useState(false);
 
     useEffect(() => {
         const fetchPosts = async () => {
+            setIsLoading(true);
             const response = await fetch(`/api/users/${session?.user.id}/posts`);
             const data = await response.json();
 
+            setIsLoading(false);
             setMyPosts(data);
         };
 
@@ -54,6 +57,7 @@ return (
         data={myPosts}
         handleEdit={handleEdit}
         handleDelete={handleDelete}
+        isLoading={isLoading}
     />
 );
 };
