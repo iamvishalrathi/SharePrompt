@@ -29,14 +29,13 @@ const Feed = () => {
 
 
   //All Posts
-  const fetchPosts = async () => {
-    const response = await fetch("/api/prompt");
-    const data = await response.json();
-
-    setAllPosts(data);
-  };
-
   useEffect(() => {
+    const fetchPosts = async () => {
+      const response = await fetch("/api/prompt");
+      const data = await response.json();
+
+      setAllPosts(data);
+    };
     fetchPosts();
   }, []);
 
@@ -90,8 +89,8 @@ const Feed = () => {
           data={searchedResults}
           handleTagClick={handleTagClick}
         />
-      ) : (isLoading?
-      <Loading/>:
+      ) : (isLoading ?
+        <Loading /> :
         <PromptCardList data={allPosts} handleTagClick={handleTagClick} />
       )}
     </section>
