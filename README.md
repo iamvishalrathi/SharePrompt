@@ -19,7 +19,7 @@ You can explore SharePrompt live by visiting the website:
 
 
 ### **Screenshot**
-![image]()
+![image](https://github.com/iamvishalrathi/SharePrompt/blob/main/public/assets/images/sns.png)
 
 
 
