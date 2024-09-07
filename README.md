@@ -15,7 +15,7 @@ Welcome to SharePrompt! This full-stack web application allows users to create, 
 
 You can explore SharePrompt live by visiting the website:
 
-[**SharePrompt - Preview the App**](https://share-prompt-4g99l8rik-iamvishalrathis-projects.vercel.app/)
+[**SharePrompt - Preview the App**](https://shareprompt.onrender.com/)
 
 
 ### **Screenshot**
