@@ -28,18 +28,19 @@ const Feed = () => {
 
   const [isLoading, setIsLoading] = useState(false);
 
+  const fetchPosts = async () => {
+    setIsLoading(true);
+    const response = await fetch("/api/prompt");
+    const data = await response.json();
+
+    setIsLoading(false);
+    setAllPosts(data);
+  };
+  
   //All Posts
   useEffect(() => {
-    const fetchPosts = async () => {
-      setIsLoading(true);
-      const response = await fetch("/api/prompt");
-      const data = await response.json();
-
-      setIsLoading(false);
-      setAllPosts(data);
-    };
     fetchPosts();
-  }, []);
+  }, [allPosts]);
 
   //Search Filter Prompts
   const filterPrompts = (searchtext) => {
