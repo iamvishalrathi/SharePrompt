@@ -25,21 +25,23 @@ const Feed = () => {
   const [searchText, setSearchText] = useState("");
   const [searchTimeout, setSearchTimeout] = useState(null);
   const [searchedResults, setSearchedResults] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
 
+  const [isLoading, setIsLoading] = useState(false);
 
   //All Posts
   useEffect(() => {
     const fetchPosts = async () => {
+      setIsLoading(true);
       const response = await fetch("/api/prompt");
       const data = await response.json();
 
+      setIsLoading(false);
       setAllPosts(data);
     };
     fetchPosts();
   }, []);
 
-  //Search Filter Posts 
+  //Search Filter Prompts
   const filterPrompts = (searchtext) => {
     const regex = new RegExp(searchtext, "i"); // 'i' flag for case-insensitive search
     return allPosts.filter(
@@ -63,7 +65,7 @@ const Feed = () => {
     );
   };
 
-  //Search Tag Posts
+  //Search Tag Prompts
   const handleTagClick = (tagName) => {
     setSearchText(tagName);
 
