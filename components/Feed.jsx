@@ -40,7 +40,7 @@ const Feed = () => {
   //All Posts
   useEffect(() => {
     fetchPosts();
-  }, [allPosts]);
+  }, []);
 
   //Search Filter Prompts
   const filterPrompts = (searchtext) => {
