@@ -29,7 +29,7 @@ You can explore SharePrompt live by visiting the website:
 - **Authentication:** Google OAuth 2.0
 - **Database:** MongoDB Atlas
 - **Styling:** Tailwind CSS
-- **Deployment:** Vercel
+- **Deployment:** Render
 
 ## **Usage**
 - **Sign In:** Click the "Sign in" button on the homepage to authenticate with your Google account.
