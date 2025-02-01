@@ -7,6 +7,18 @@
 <p align="center">
     <em><code><a href="https://shareprompt.onrender.com/" target="_blank" >❯ Live</a></code></em>
 </p>
+<p align="center">
+	<img src="https://img.shields.io/github/license/iamvishalrathi/SharePrompt?style=default&logo=opensourceinitiative&logoColor=white&color=0080ff" alt="license">
+	<img src="https://img.shields.io/github/last-commit/iamvishalrathi/SharePrompt?style=default&logo=git&logoColor=white&color=0080ff" alt="last-commit">
+	<img src="https://img.shields.io/github/languages/top/iamvishalrathi/SharePrompt?style=default&color=0080ff" alt="repo-top-language">
+	<img src="https://img.shields.io/github/languages/count/iamvishalrathi/SharePrompt?style=default&color=0080ff" alt="repo-language-count">
+</p>
+<p align="center"><!-- default option, no dependency badges. -->
+</p>
+<p align="center">
+	<!-- default option, no dependency badges. -->
+</p>
+<br>
 
 Welcome to SharePrompt! This full-stack web application allows users to create, save, and search various prompts. Users can sign in using their Google accounts. The application is built using Next.js for both the frontend and backend.
 
